@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <mavlink>
   <include>standard.xml</include>
-  <include>custom_message.xml</include>
   <version>3</version>
   <dialect>0</dialect>
   <enums>
@@ -8141,5 +8140,12 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+	<!-- 自定义消息示例 -->
+	<message id="70000" name="CUSTOM_COMMAND">
+		<description>自定义命令消息</description>
+		<field type="uint8_t" name="target_system">目标系统 ID</field>
+		<field type="uint8_t" name="target_component">目标组件 ID</field>
+		<field type="uint32_t" name="custom_param1">自定义参数</field>
+	</message>
   </messages>
 </mavlink>
