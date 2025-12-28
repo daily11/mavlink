@@ -8141,7 +8141,7 @@
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
 	<!-- 自定义消息示例 -->
-	<message id="70000" name="CUSTOM_COMMAND">
+	<message id="20001" name="CUSTOM_COMMAND">
 		<description>自定义命令消息</description>
 		<field type="uint8_t" name="target_system">目标系统 ID</field>
 		<field type="uint8_t" name="target_component">目标组件 ID</field>
